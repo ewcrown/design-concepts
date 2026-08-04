@@ -13,7 +13,7 @@ Open http://localhost:8080
 
 ## Live site
 
-https://ewcrown.github.io/shopify-concepts/
+https://ewcrown.github.io/design-concepts/
 
 ## Brands
 

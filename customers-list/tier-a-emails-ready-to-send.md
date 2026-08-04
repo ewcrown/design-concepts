@@ -2,7 +2,7 @@
 
 **Primary concepts:** HTML in `docs/` → live on **GitHub Pages**
 
-**Live hub:** https://ewcrown.github.io/shopify-concepts/
+**Live hub:** https://ewcrown.github.io/design-concepts/
 
 Each brand has **3 linked pages**:
 1. Homepage
@@ -15,14 +15,14 @@ Replace: `[YOUR NAME]` · `[AGENCY]` · use the **Home** URL as `[CONCEPT LINK]`
 
 ## Concept links by brand
 
-Base: `https://ewcrown.github.io/shopify-concepts`
+Base: `https://ewcrown.github.io/design-concepts`
 
 ### 1. Katie and May (warm editorial boutique)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/shopify-concepts/katie-and-may/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/katie-and-may/collection/ |
-| Product | https://ewcrown.github.io/shopify-concepts/katie-and-may/product/ |
+| Homepage | https://ewcrown.github.io/design-concepts/katie-and-may/ |
+| Collection | https://ewcrown.github.io/design-concepts/katie-and-may/collection/ |
+| Product | https://ewcrown.github.io/design-concepts/katie-and-may/product/ |
 | Site | https://www.katieandmay.co.uk |
 | Email | Catherine@katieandmay.co.uk |
 
@@ -33,9 +33,9 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 ### 2. Suzy Loves Milo (open catalog / lifestyle)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/collection/ |
-| Product | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/product/ |
+| Homepage | https://ewcrown.github.io/design-concepts/suzy-loves-milo/ |
+| Collection | https://ewcrown.github.io/design-concepts/suzy-loves-milo/collection/ |
+| Product | https://ewcrown.github.io/design-concepts/suzy-loves-milo/product/ |
 | Site | https://suzylovesmiloconcept.com |
 | Email | info@suzylovesmilo.co.uk |
 
@@ -46,9 +46,9 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 ### 3. Phases Africa (earth gallery / made-to-order)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/shopify-concepts/phases-africa/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/phases-africa/collection/ |
-| Product | https://ewcrown.github.io/shopify-concepts/phases-africa/product/ |
+| Homepage | https://ewcrown.github.io/design-concepts/phases-africa/ |
+| Collection | https://ewcrown.github.io/design-concepts/phases-africa/collection/ |
+| Product | https://ewcrown.github.io/design-concepts/phases-africa/product/ |
 | Site | https://www.phasesafrica.com |
 | Email | info@phasesafrica.com |
 
@@ -59,9 +59,9 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 ### 4. Animal Kingdom (outdoor + pet deals)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/shopify-concepts/animal-kingdom/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/animal-kingdom/collection/ |
-| Product | https://ewcrown.github.io/shopify-concepts/animal-kingdom/product/ |
+| Homepage | https://ewcrown.github.io/design-concepts/animal-kingdom/ |
+| Collection | https://ewcrown.github.io/design-concepts/animal-kingdom/collection/ |
+| Product | https://ewcrown.github.io/design-concepts/animal-kingdom/product/ |
 | Site | https://animalkingdom.co.za |
 | Email | info@animal-kingdom.co.za |
 
@@ -72,9 +72,9 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 ### 5. Furniture Liquidation (bold warehouse commercial)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/collection/ |
-| Product | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/product/ |
+| Homepage | https://ewcrown.github.io/design-concepts/furniture-liquidation/ |
+| Collection | https://ewcrown.github.io/design-concepts/furniture-liquidation/collection/ |
+| Product | https://ewcrown.github.io/design-concepts/furniture-liquidation/product/ |
 | Site | https://www.loungesuiteforsale.co.za |
 | Email | glen@furnitureliquidation.co.za |
 
