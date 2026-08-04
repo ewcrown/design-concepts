@@ -2,7 +2,7 @@
 
 **Primary concepts:** HTML in `docs/` → live on **GitHub Pages**
 
-**Live hub:** https://ewcrown.github.io/customer-finder/
+**Live hub:** https://ewcrown.github.io/shopify-concepts/
 
 Each brand has **3 linked pages**:
 1. Homepage
@@ -15,14 +15,14 @@ Replace: `[YOUR NAME]` · `[AGENCY]` · use the **Home** URL as `[CONCEPT LINK]`
 
 ## Concept links by brand
 
-Base: `https://ewcrown.github.io/customer-finder`
+Base: `https://ewcrown.github.io/shopify-concepts`
 
 ### 1. Katie and May (warm editorial boutique)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/customer-finder/katie-and-may/ |
-| Collection | https://ewcrown.github.io/customer-finder/katie-and-may/collection.html |
-| Product | https://ewcrown.github.io/customer-finder/katie-and-may/product.html |
+| Homepage | https://ewcrown.github.io/shopify-concepts/katie-and-may/ |
+| Collection | https://ewcrown.github.io/shopify-concepts/katie-and-may/collection.html |
+| Product | https://ewcrown.github.io/shopify-concepts/katie-and-may/product.html |
 | Site | https://www.katieandmay.co.uk |
 | Email | Catherine@katieandmay.co.uk |
 
@@ -33,9 +33,9 @@ Base: `https://ewcrown.github.io/customer-finder`
 ### 2. Suzy Loves Milo (open catalog / lifestyle)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/customer-finder/suzy-loves-milo/ |
-| Collection | https://ewcrown.github.io/customer-finder/suzy-loves-milo/collection.html |
-| Product | https://ewcrown.github.io/customer-finder/suzy-loves-milo/product.html |
+| Homepage | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/ |
+| Collection | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/collection.html |
+| Product | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/product.html |
 | Site | https://suzylovesmiloconcept.com |
 | Email | info@suzylovesmilo.co.uk |
 
@@ -46,9 +46,9 @@ Base: `https://ewcrown.github.io/customer-finder`
 ### 3. Phases Africa (earth gallery / made-to-order)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/customer-finder/phases-africa/ |
-| Collection | https://ewcrown.github.io/customer-finder/phases-africa/collection.html |
-| Product | https://ewcrown.github.io/customer-finder/phases-africa/product.html |
+| Homepage | https://ewcrown.github.io/shopify-concepts/phases-africa/ |
+| Collection | https://ewcrown.github.io/shopify-concepts/phases-africa/collection.html |
+| Product | https://ewcrown.github.io/shopify-concepts/phases-africa/product.html |
 | Site | https://www.phasesafrica.com |
 | Email | info@phasesafrica.com |
 
@@ -59,9 +59,9 @@ Base: `https://ewcrown.github.io/customer-finder`
 ### 4. Animal Kingdom (outdoor + pet deals)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/customer-finder/animal-kingdom/ |
-| Collection | https://ewcrown.github.io/customer-finder/animal-kingdom/collection.html |
-| Product | https://ewcrown.github.io/customer-finder/animal-kingdom/product.html |
+| Homepage | https://ewcrown.github.io/shopify-concepts/animal-kingdom/ |
+| Collection | https://ewcrown.github.io/shopify-concepts/animal-kingdom/collection.html |
+| Product | https://ewcrown.github.io/shopify-concepts/animal-kingdom/product.html |
 | Site | https://animalkingdom.co.za |
 | Email | info@animal-kingdom.co.za |
 
@@ -72,9 +72,9 @@ Base: `https://ewcrown.github.io/customer-finder`
 ### 5. Furniture Liquidation (bold warehouse commercial)
 | Page | Link |
 |------|------|
-| Homepage | https://ewcrown.github.io/customer-finder/furniture-liquidation/ |
-| Collection | https://ewcrown.github.io/customer-finder/furniture-liquidation/collection.html |
-| Product | https://ewcrown.github.io/customer-finder/furniture-liquidation/product.html |
+| Homepage | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/ |
+| Collection | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/collection.html |
+| Product | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/product.html |
 | Site | https://www.loungesuiteforsale.co.za |
 | Email | glen@furnitureliquidation.co.za |
 
