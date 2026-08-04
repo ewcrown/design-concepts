@@ -1,10 +1,8 @@
 # Tier A — Full Concept Pack (Home + Collection + Product)
 
-**Primary concepts:** HTML in `docs/` → host on **GitHub Pages** (no Figma rate limits)
+**Primary concepts:** HTML in `docs/` → live on **GitHub Pages**
 
-After Pages is live, replace `YOUR_USERNAME` / `REPO_NAME` below (or search-replace once).
-
-**Local preview:** `cd docs && python3 -m http.server 8080` → http://localhost:8080
+**Live hub:** https://ewcrown.github.io/customer-finder/
 
 Each brand has **3 linked pages**:
 1. Homepage
