@@ -25,18 +25,36 @@
   }
 
   document.querySelectorAll(".gallery").forEach((gallery) => {
-    const main = gallery.querySelector(".main img");
+    const mainImg = gallery.querySelector(".main img");
     const thumbs = gallery.querySelectorAll(".thumbs .img");
-    thumbs.forEach((thumb) => {
-      thumb.addEventListener("click", () => {
-        const img = thumb.querySelector("img");
-        if (!main || !img) return;
-        main.src = img.src;
-        thumbs.forEach((t) => t.classList.remove("is-active"));
-        thumb.classList.add("is-active");
-      });
+    const counter = gallery.querySelector("[data-gallery-count]");
+    const total = thumbs.length;
+
+    const setActive = (thumb, index) => {
+      const img = thumb.querySelector("img");
+      if (!img) return;
+      if (mainImg) {
+        mainImg.style.opacity = "0.65";
+        setTimeout(() => {
+          mainImg.src = img.currentSrc || img.src;
+          mainImg.style.opacity = "1";
+        }, 120);
+      }
+      thumbs.forEach((t) => t.classList.remove("is-active"));
+      thumb.classList.add("is-active");
+      if (counter) {
+        counter.textContent = String(index + 1).padStart(2, "0") + " / " + String(total).padStart(2, "0");
+      }
+    };
+
+    if (mainImg) {
+      mainImg.style.transition = "opacity .2s ease";
+    }
+
+    thumbs.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => setActive(thumb, index));
     });
-    if (thumbs[0]) thumbs[0].classList.add("is-active");
+    if (thumbs[0]) setActive(thumbs[0], 0);
   });
 
   document.querySelectorAll(".sizes").forEach((group) => {
