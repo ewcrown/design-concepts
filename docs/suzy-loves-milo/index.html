@@ -16,8 +16,8 @@
     .btn.dark { background:var(--accent); border-color:var(--accent); }
     .visit { background:var(--ink); color:#e7f0ea; }
     .newsletter, footer { background:#15201b; color:#b7c4bc; }
-    .steps { background:var(--cream); }
-    .lookbook { background:#fff; }
+    .steps, .lookbook, .banner .copy { background:var(--cream); }
+    .value { background:#fff; }
     @media (max-width:900px){ .hero{grid-template-columns:1fr;} }
   </style>
 </head>
@@ -64,9 +64,28 @@
   </section>
 
   <section class="wrap">
+    <div class="sec-head"><h2>Shop by vibe</h2></div>
+    <div class="split3">
+      <a class="cat" href="collection.html"><img src="../assets/suzy-p1.jpg" alt="" /><div class="shade"><h3>Sets</h3><p>Matched looks →</p></div></a>
+      <a class="cat" href="collection.html"><img src="../assets/suzy-p3.jpg" alt="" /><div class="shade"><h3>Basics</h3><p>Everyday tees →</p></div></a>
+      <a class="cat" href="collection.html"><img src="../assets/suzy-p4.jpg" alt="" /><div class="shade"><h3>Outer</h3><p>Layer up →</p></div></a>
+    </div>
+  </section>
+
+  <section class="wrap">
     <div class="split2">
       <a class="panel" href="collection.html"><img src="../assets/suzy-p2.jpg" alt="" /><div class="shade"><h3>New In</h3><p>Browse without signing in →</p></div></a>
       <a class="panel" href="collection.html"><img src="../assets/suzy-p4.jpg" alt="" /><div class="shade"><h3>Best Sellers</h3><p>What people actually buy →</p></div></a>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>Most wanted</h2><a href="collection.html">View all →</a></div>
+    <div class="grid4">
+      <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-hero.jpg" alt="" /></div><h3>Weekend Dress</h3><p>£62</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p3.jpg" alt="" /></div><h3>Logo Tee</h3><p>£26</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p1.jpg" alt="" /></div><h3>Knit Tank</h3><p>£32</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p2.jpg" alt="" /></div><h3>Wide Trouser</h3><p>£52</p></a>
     </div>
   </section>
 
@@ -101,6 +120,37 @@
     </div>
   </section>
 
+  <section class="wrap">
+    <div class="sec-head"><h2>What customers want</h2></div>
+    <div class="rev-grid">
+      <div class="rev"><q>I just wanted to browse — not create an account first.</q><span>— Jess</span></div>
+      <div class="rev"><q>Mobile checkout that doesn’t fight me.</q><span>— Amina</span></div>
+      <div class="rev"><q>Clear sizes, clear photos, done.</q><span>— Leah</span></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>Built for trust</h2></div>
+    <div class="values">
+      <div class="value"><span>01</span><h3>Open browsing</h3><p>No gate before the catalog.</p></div>
+      <div class="value"><span>02</span><h3>Fast PDPs</h3><p>Size, price, add to bag.</p></div>
+      <div class="value"><span>03</span><h3>Guest checkout</h3><p>Buy without friction.</p></div>
+      <div class="value"><span>04</span><h3>Real stock</h3><p>Inventory that updates.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="banner">
+      <div class="copy">
+        <span class="eyebrow">DROP ALERTS</span>
+        <h2>New pieces, no password</h2>
+        <p class="lead">Email capture that works — and a shop anyone can open.</p>
+        <a class="btn dark" href="collection.html">Browse now</a>
+      </div>
+      <div class="media"><img src="../assets/suzy-p4.jpg" alt="" /></div>
+    </div>
+  </section>
+
   <section class="newsletter">
     <h2>Be first to the drop</h2>
     <p>Email capture that works on every device.</p>
@@ -112,7 +162,7 @@
     <div><strong>Shop</strong><a href="collection.html">Collection</a><a href="product.html">Product</a></div>
     <div><strong>Help</strong>Shipping<br/>Returns</div>
     <div><strong>Brand</strong>About<br/>Contact</div>
-    <div class="note">Shopify homepage concept · Problem fixed: login wall → open catalog</div>
+    <div class="note">Shopify homepage concept · 10+ sections · login wall → open catalog</div>
   </footer>
 </body>
 </html>
