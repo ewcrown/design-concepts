@@ -18,16 +18,16 @@
       -webkit-font-smoothing:antialiased;
     }
     a { color:inherit; text-decoration:none; }
-    .wrap { max-width:1120px; margin:0 auto; padding:64px 24px 96px; }
+    .wrap { max-width:1080px; margin:0 auto; padding:clamp(48px,8vw,88px) clamp(20px,4vw,32px) clamp(72px,10vw,112px); }
     .eyebrow { font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:16px; }
     h1 { font-family:"Instrument Serif",serif; font-size:clamp(42px,7vw,72px); letter-spacing:-.03em; line-height:.95; margin-bottom:16px; font-weight:400; }
     header p { color:var(--muted); max-width:520px; line-height:1.7; font-size:16px; }
-    header { margin-bottom:48px; padding-bottom:36px; border-bottom:1px solid var(--line); }
-    .grid { display:grid; gap:14px; }
+    header { margin-bottom:40px; padding-bottom:32px; border-bottom:1px solid var(--line); }
+    .grid { display:grid; gap:16px; }
     .card {
       background:linear-gradient(180deg,rgba(255,255,255,.03),transparent), var(--panel);
-      border:1px solid var(--line); border-radius:16px; padding:26px;
-      display:grid; gap:16px; transition:transform .35s cubic-bezier(.22,1,.36,1), border-color .35s, box-shadow .35s;
+      border:1px solid var(--line); border-radius:16px; padding:28px 28px 24px;
+      display:grid; gap:14px; transition:transform .35s cubic-bezier(.22,1,.36,1), border-color .35s, box-shadow .35s;
     }
     .card:hover { transform:translateY(-4px); border-color:#3a4150; box-shadow:0 24px 60px rgba(0,0,0,.35); }
     .card h2 { font-family:"Instrument Serif",serif; font-size:30px; font-weight:400; letter-spacing:-.02em; }

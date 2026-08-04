@@ -17,8 +17,8 @@
     .brand,h1,h2{font-family:"Cormorant Garamond",serif;font-weight:600}
     .brand{font-size:clamp(26px,2.4vw,34px);letter-spacing:.12em}
     .ann{background:var(--ink);color:#f6efe7}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;min-height:min(88vh,760px)}
-    .hero-copy{background:linear-gradient(160deg,var(--cream),#e5d8c6);padding:clamp(48px,7vw,88px) clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:20px;position:relative}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr}
+    .hero-copy{background:linear-gradient(160deg,var(--cream),#e5d8c6);position:relative}
     .hero-copy::before{content:"";position:absolute;inset:18px;border:1px solid rgba(31,23,19,.12);pointer-events:none}
     .hero-copy h1{font-size:clamp(44px,6vw,72px);max-width:9ch}
     .visit{background:linear-gradient(135deg,#241a15,#1a1411);color:#f4ebe3}
@@ -28,7 +28,7 @@
     .value{background:rgba(255,255,255,.55)}
     .btn.dark{border-radius:2px}
     .btn.light{border-radius:2px}
-    @media (max-width:980px){.hero{grid-template-columns:1fr}.hero-copy{padding:44px 24px}.hero-copy::before{display:none}}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.hero-copy::before{display:none}}
 
   </style>
 </head>
