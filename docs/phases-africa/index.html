@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phases Africa — Homepage Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css" />
+  <style>
+    :root { --bg:#f3efe6; --ink:#1a120c; --muted:#6a5a4c; --line:#d8cdbc; --cream:#e7d7b8; --accent:#b3541e; }
+    body { background:var(--bg); color:var(--ink); font-family:"DM Sans",sans-serif; }
+    .brand, h1, h2 { font-family:Syne,sans-serif; font-weight:800; }
+    .ann { background:var(--accent); color:#fff8f0; }
+    .hero { position:relative; min-height:620px; color:#fff; }
+    .hero .media { position:absolute; inset:0; }
+    .hero .media::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(20,12,8,.78),rgba(20,12,8,.25)); }
+    .hero-copy { position:relative; z-index:1; max-width:640px; padding:120px 8vw 80px; display:grid; gap:18px; }
+    .btn.dark { background:var(--accent); border-color:var(--accent); }
+    .btn.light { color:#fff; border-color:#fff; }
+    .visit { background:#1a120c; color:#f0e6d8; }
+    .newsletter, footer { background:#120c08; color:#c9b9a6; }
+    .steps { background:#1a120c; color:#f0e6d8; }
+    .steps span, .steps p { color:#c9b9a6; }
+    .lookbook { background:var(--cream); }
+  </style>
+</head>
+<body>
+  <div class="ann">From portfolio inquiry → real ecommerce shop</div>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html">Phases Africa</a>
+      <div class="nav-links">
+        <a href="collection.html">Collections</a>
+        <a href="collection.html">Furniture</a>
+        <a href="product.html">Featured</a>
+        <a href="#">Projects</a>
+      </div>
+      <span>Bag 0</span>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="media"><img src="../assets/phases-hero.jpg" alt="Phases Africa" /></div>
+    <div class="hero-copy">
+      <span class="eyebrow" style="color:#e7d7b8">AFRICAN CONTEMPORARY DESIGN</span>
+      <h1>Furniture you can actually buy online</h1>
+      <p class="lead" style="color:#e8dccb">Not just a portfolio. A Shopify store with products, prices, and a working contact path.</p>
+      <div class="btns">
+        <a class="btn dark" href="collection.html">Shop collections</a>
+        <a class="btn light" href="product.html">View a piece</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust wrap">
+    <div>Priced catalog</div><div>Working contact</div><div>Project + retail</div><div>Mobile ready</div>
+  </div>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>Featured pieces</h2><a href="collection.html">All furniture →</a></div>
+    <div class="grid4">
+      <a class="card" href="product.html"><div class="img"><img src="../assets/phases-p1.jpg" alt="" /></div><h3>Lounge Chair</h3><p>R 8,400</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/phases-p2.jpg" alt="" /></div><h3>Side Table</h3><p>R 3,200</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/phases-p3.jpg" alt="" /></div><h3>Dining Bench</h3><p>R 6,900</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/phases-p4.jpg" alt="" /></div><h3>Statement Lamp</h3><p>R 2,850</p></a>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="split2">
+      <a class="panel" href="collection.html"><img src="../assets/phases-p1.jpg" alt="" /><div class="shade"><h3>Living</h3><p>Shop seating →</p></div></a>
+      <a class="panel" href="collection.html"><img src="../assets/phases-p3.jpg" alt="" /><div class="shade"><h3>Dining</h3><p>Tables &amp; benches →</p></div></a>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap grid3">
+      <article><span>01</span><h3>Buyable products</h3><p>Price, stock, and add to cart — not “enquire only.”</p></article>
+      <article><span>02</span><h3>Fixed contact</h3><p>No broken contact URL. Forms that reach you.</p></article>
+      <article><span>03</span><h3>Retail + projects</h3><p>Sell online while still taking custom briefs.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap styling">
+    <div>
+      <span class="eyebrow">STUDIO + STORE</span>
+      <h2>Design house energy. Ecommerce clarity.</h2>
+      <p class="lead">Keep the brand strength of the portfolio site — add a real catalog so customers can purchase without emailing first.</p>
+      <a class="btn dark" href="collection.html">Browse the shop</a>
+    </div>
+    <div class="media tall"><img src="../assets/phases-p2.jpg" alt="" /></div>
+  </section>
+
+  <section class="lookbook">
+    <div class="wrap">
+      <div class="sec-head"><h2>Material &amp; craft</h2></div>
+      <div class="look-grid">
+        <div class="img"><img src="../assets/phases-p4.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/phases-hero.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/phases-p1.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/phases-p3.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/phases-p2.jpg" alt="" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Project updates &amp; new releases</h2>
+    <p>Working signup for trade and retail buyers.</p>
+    <form class="form" onsubmit="return false"><input placeholder="Email address" /><button type="submit">Subscribe</button></form>
+  </section>
+
+  <footer>
+    <div><strong>Phases Africa</strong>Concept only — not the live site</div>
+    <div><strong>Shop</strong><a href="collection.html">Collection</a><a href="product.html">Product</a></div>
+    <div><strong>Studio</strong>Projects<br/>Contact</div>
+    <div><strong>Trade</strong>Enquiries</div>
+    <div class="note">Shopify homepage concept · Portfolio → shoppable store</div>
+  </footer>
+</body>
+</html>

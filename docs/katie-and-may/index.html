@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katie and May — Homepage Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css" />
+  <style>
+    :root { --bg:#faf7f2; --ink:#281f1b; --muted:#6e5b52; --line:#e4d8cc; --cream:#ece2d6; --accent:#281f1b; }
+    body { background:var(--bg); color:var(--ink); font-family:Outfit,sans-serif; }
+    .brand, h1, h2 { font-family:"Cormorant Garamond",serif; font-weight:600; }
+    .ann { background:var(--ink); color:#f5efe8; }
+    .hero { display:grid; grid-template-columns:1.15fr .85fr; min-height:560px; }
+    .hero-copy { background:var(--cream); padding:72px 48px; display:flex; flex-direction:column; justify-content:center; gap:18px; }
+    .visit { background:var(--ink); color:#f4ebe3; }
+    .visit p, .newsletter p { color:#cbbfb4; }
+    .newsletter, footer { background:#1a1411; color:#cbbfb4; }
+    .steps { background:var(--cream); }
+    .lookbook { background:var(--cream); }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr;} .hero-copy{padding:40px 24px;} }
+  </style>
+</head>
+<body>
+  <div class="ann">Free UK delivery over £50 · New + Preloved now working</div>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html">Katie &amp; May</a>
+      <div class="nav-links">
+        <a href="collection.html">New</a>
+        <a href="collection.html">Preloved</a>
+        <a href="collection.html">Dresses</a>
+        <a href="product.html">Featured</a>
+      </div>
+      <span>Bag 0</span>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="media"><img src="../assets/km-hero.jpg" alt="Katie and May fashion" /></div>
+    <div class="hero-copy">
+      <h1>Live well dressed in Yorkshire</h1>
+      <p class="lead">Independent boutique fashion — new &amp; preloved collections that actually load.</p>
+      <div class="btns">
+        <a class="btn dark" href="collection.html">Shop New Styles</a>
+        <a class="btn light" href="collection.html">Shop Preloved</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust wrap">
+    <div>Free UK returns</div><div>Chapel Allerton pickup</div><div>Personal styling</div><div>Working product catalog</div>
+  </div>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>New this week</h2><a href="collection.html">View collection →</a></div>
+    <div class="grid4">
+      <a class="card" href="product.html"><div class="img"><img src="../assets/km-p1.jpg" alt="" /></div><h3>Linen Midi Dress</h3><p>£68</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/km-p2.jpg" alt="" /></div><h3>Soft Knit Top</h3><p>£36</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/km-p3.jpg" alt="" /></div><h3>Tailored Coat</h3><p>£120</p></a>
+      <a class="card" href="product.html"><div class="img"><img src="../assets/km-p4.jpg" alt="" /></div><h3>Evening Dress</h3><p>£84</p></a>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="split2">
+      <a class="panel" href="collection.html"><img src="../assets/km-p3.jpg" alt="" /><div class="shade"><h3>New Arrivals</h3><p>Browse the fixed catalog →</p></div></a>
+      <a class="panel" href="collection.html"><img src="../assets/km-p1.jpg" alt="" /><div class="shade"><h3>Preloved Edit</h3><p>Curated secondhand →</p></div></a>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap grid3">
+      <article><span>01</span><h3>Working shop</h3><p>Products load. No more “No Results Found.”</p></article>
+      <article><span>02</span><h3>Mobile checkout</h3><p>Fast Shopify checkout on phone.</p></article>
+      <article><span>03</span><h3>Real stats</h3><p>See what sells and what gets abandoned.</p></article>
+    </div>
+  </section>
+
+  <section class="lookbook">
+    <div class="wrap">
+      <div class="sec-head"><h2>From the boutique</h2><a href="#">@katie_and_may →</a></div>
+      <div class="look-grid">
+        <div class="img"><img src="../assets/km-p1.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/km-p2.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/km-hero.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/km-p3.jpg" alt="" /></div>
+        <div class="img"><img src="../assets/km-p4.jpg" alt="" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap styling">
+    <div>
+      <span class="eyebrow">PERSONAL STYLING</span>
+      <h2>Not just clothes — outfits that fit your life</h2>
+      <p class="lead">Book a styling session in-store or build a wardrobe from new + preloved pieces.</p>
+      <a class="btn dark" href="#">Book styling</a>
+    </div>
+    <div class="media tall"><img src="../assets/km-p3.jpg" alt="Styling" /></div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>What locals say</h2></div>
+    <div class="rev-grid">
+      <div class="rev"><q>Finally found pieces I actually wear again.</q><span>— Emma, Leeds</span></div>
+      <div class="rev"><q>The preloved edit is better than most new shops.</q><span>— Sophie, Chapel Allerton</span></div>
+      <div class="rev"><q>Styling session changed my whole wardrobe.</q><span>— Hannah, Headingley</span></div>
+    </div>
+  </section>
+
+  <section class="visit wrap">
+    <div>
+      <span class="eyebrow light">VISIT THE SHOP</span>
+      <h2>130 Harrogate Rd<br/>Chapel Allerton</h2>
+      <p>Try before you buy. Pickup available for online orders.</p>
+    </div>
+    <ul class="feature-list">
+      <li>→ Mon–Sat open</li>
+      <li>→ Personal styling</li>
+      <li>→ New + Preloved</li>
+      <li>→ Yorkshire brands</li>
+    </ul>
+  </section>
+
+  <section class="newsletter">
+    <h2>10% off your first order</h2>
+    <p>Working signup — not a broken shortcode.</p>
+    <form class="form" onsubmit="return false"><input placeholder="Email address" /><button type="submit">Join</button></form>
+  </section>
+
+  <footer>
+    <div><strong>Katie and May · Leeds</strong>Concept only — not the live store</div>
+    <div><strong>Shop</strong><a href="collection.html">New</a><a href="collection.html">Preloved</a><a href="product.html">Featured</a></div>
+    <div><strong>Help</strong>Delivery<br/>Returns<br/>Contact</div>
+    <div><strong>Visit</strong>Chapel Allerton<br/>Styling<br/>Instagram</div>
+    <div class="note">Shopify homepage concept · Problem fixed: broken shop → working catalog</div>
+  </footer>
+</body>
+</html>

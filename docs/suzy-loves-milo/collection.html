@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suzy Loves Milo — Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css" />
+  <style>
+    :root { --bg:#f6f1ea; --ink:#1f2a24; --muted:#5d6b63; --line:#d9cfc3; --accent:#2f6b4f; }
+    body { background:var(--bg); color:var(--ink); font-family:Manrope,sans-serif; }
+    .brand, h1, h2 { font-family:Fraunces,serif; font-weight:700; }
+    .ann { background:var(--accent); color:#f4fff8; }
+    .chip.active { background:var(--accent); border-color:var(--accent); }
+    footer { background:#15201b; color:#b7c4bc; }
+  </style>
+</head>
+<body>
+  <div class="ann">Collection concept · No account required</div>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html">Suzy Loves Milo</a>
+      <div class="nav-links">
+        <a href="collection.html">Shop</a>
+        <a href="collection.html">New In</a>
+        <a href="product.html">Featured</a>
+      </div>
+      <span>Bag 0</span>
+    </nav>
+    <section>
+      <div class="toolbar">
+        <div><h1>Shop all</h1><p>Open catalog · Filter by category</p></div>
+        <select><option>Featured</option><option>Newest</option><option>Price</option></select>
+      </div>
+      <div class="filters">
+        <span class="chip active">All</span><span class="chip">Sets</span><span class="chip">Tops</span><span class="chip">Bottoms</span><span class="chip">Outerwear</span>
+      </div>
+      <div class="grid4">
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p1.jpg" alt="" /></div><h3>Rib Knit Set</h3><p>£54</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p2.jpg" alt="" /></div><h3>Soft Cargo</h3><p>£48</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p3.jpg" alt="" /></div><h3>Everyday Tee</h3><p>£28</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p4.jpg" alt="" /></div><h3>Layer Coat</h3><p>£96</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-hero.jpg" alt="" /></div><h3>Weekend Dress</h3><p>£62</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p3.jpg" alt="" /></div><h3>Logo Tee</h3><p>£26</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p1.jpg" alt="" /></div><h3>Knit Tank</h3><p>£32</p></a>
+        <a class="card" href="product.html"><div class="img"><img src="../assets/suzy-p2.jpg" alt="" /></div><h3>Wide Trouser</h3><p>£52</p></a>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div><strong>Suzy Loves Milo</strong>Collection concept</div>
+    <div><strong>Pages</strong><a href="index.html">Home</a><a href="collection.html">Collection</a><a href="product.html">Product</a></div>
+    <div><strong>Help</strong>Shipping<br/>Returns</div>
+    <div><strong>Brand</strong>About</div>
+    <div class="note">Shopify collection · Products visible without login</div>
+  </footer>
+</body>
+</html>
