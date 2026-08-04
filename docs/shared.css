@@ -179,9 +179,6 @@ section.steps,
 section.lookbook{
   padding-block:var(--section-y);
 }
-section.newsletter{
-  padding-block:clamp(88px,10vw,132px);
-}
 .sec-head{
   display:flex;
   justify-content:space-between;
@@ -313,10 +310,14 @@ section.newsletter{
 
 .newsletter{
   text-align:center;
-  padding-inline:var(--gutter);
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:clamp(88px,10vw,132px) var(--gutter);
   color:#fff;
   position:relative;
   overflow:hidden;
+  box-sizing:border-box;
 }
 .newsletter h2{font-size:clamp(28px,3.8vw,44px);margin-bottom:var(--s-3)}
 .newsletter p{opacity:.72;margin-bottom:var(--s-6);font-size:15px;max-width:42ch;margin-inline:auto}
@@ -328,32 +329,30 @@ section.newsletter{
 }
 .form button:hover{filter:brightness(.96)}
 
+/* Footer: full-bleed background, inner content constrained */
 footer,
 .site-footer{
-  display:block;
-  width:100%;
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:clamp(64px,8vw,96px) 0 !important;
   clear:both;
   position:relative;
   z-index:5;
-  margin:0;
-  padding:0;
   box-sizing:border-box;
 }
-.footer-grid,
-footer:not(:has(.footer-grid)){
+.footer-grid{
   width:100%;
   max-width:var(--max);
   margin-inline:auto;
-  padding:clamp(64px,8vw,96px) var(--gutter) var(--s-9);
+  padding-inline:var(--gutter);
   display:grid;
   grid-template-columns:minmax(0,1.35fr) repeat(3,minmax(0,1fr));
   gap:var(--s-6) var(--s-7);
   font-size:13px;
   box-sizing:border-box;
 }
-.site-footer .footer-grid{max-width:var(--max)}
-.site-footer .wrap.footer-grid{padding-block:clamp(64px,8vw,96px)}
-footer > *,
 .footer-grid > *{min-width:0}
 footer strong,
 .site-footer strong{
@@ -554,7 +553,7 @@ main{display:block;width:100%}
     --gutter:clamp(20px,5vw,32px);
   }
   .nav-links{display:none}
-  .trust,.grid4,.grid3,.rev-grid,.look-grid,.split2,.split3,.styling,.visit,.pdp,.banner,.values,footer{
+  .trust,.grid4,.grid3,.rev-grid,.look-grid,.split2,.split3,.styling,.visit,.pdp,.banner,.values{
     grid-template-columns:1fr;
   }
   .trust,.grid4,.rev-grid,.steps .grid3,.values{grid-template-columns:1fr 1fr}
@@ -568,13 +567,11 @@ main{display:block;width:100%}
   .card .img::after{display:none}
   .styling{gap:var(--s-6)}
   .toolbar{padding-top:var(--s-5);align-items:start}
-  footer:not(:has(.footer-grid)),
   .footer-grid{grid-template-columns:1fr 1fr;gap:var(--s-5)}
 }
 @media (max-width:560px){
   .trust,.grid4,.rev-grid,.values,.steps .grid3{grid-template-columns:1fr}
   .look-grid{grid-template-columns:repeat(2,1fr)}
-  footer:not(:has(.footer-grid)),
   .footer-grid{grid-template-columns:1fr}
   .trust{padding-block:var(--s-4)}
 }
