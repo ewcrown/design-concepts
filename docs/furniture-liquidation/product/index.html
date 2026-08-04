@@ -7,18 +7,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared.css" />
   <style>
-    :root { --bg:#f7f5f1; --ink:#1c1917; --muted:#6b635c; --line:#ddd6cc; --accent:#c45c26; }
-    body { background:var(--bg); color:var(--ink); font-family:"IBM Plex Sans",sans-serif; }
-    .brand, h1, h2 { font-family:"Archivo Black",sans-serif; font-weight:400; }
-    .ann { background:var(--accent); color:#fff8f2; }
-    .btn.dark { background:var(--accent); border-color:var(--accent); }
-    .size.active { background:var(--accent); border-color:var(--accent); }
-    footer { background:#11100e; color:#b8aea3; }
+    :root{--bg:#f4f0e9;--ink:#171411;--muted:#6a625a;--line:#ddd4c8;--accent:#c24d1c}
+    body{background:linear-gradient(180deg,#f8f5ef,var(--bg));color:var(--ink);font-family:"IBM Plex Sans",sans-serif}
+    .brand,h1,h2{font-family:"Archivo Black",sans-serif;font-weight:400;letter-spacing:-.03em}
+    .ann{background:var(--accent);color:#fff8f2}
+    .btn.dark,.chip.active,.size.active{background:var(--accent);border-color:var(--accent)}
+    .btn{border-radius:2px}
+    footer{background:#0e0d0b;color:#b8aea3}
     .swatch.a{background:#5c4033}.swatch.b{background:#1c1917}.swatch.c{background:#c4b49a}
+
   </style>
 </head>
 <body>
-  <div class="ann">Product concept · Specs, stock, pickup or delivery</div>
+<div class="site-top">
+  <div class="ann">In stock today · Pickup or delivery</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="../">Furniture Liquidation</a>
@@ -26,9 +28,12 @@
         <a href="../collection/">Lounges</a>
         <a href="../product/">Featured</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
-    <div class="pdp">
+  </div>
+</div>
+  <div class="wrap">
+<div class="pdp">
       <div class="gallery">
         <div class="main"><img src="../../assets/fl-p1.jpg" alt="3-Seater Lounge" /></div>
         <div class="thumbs">
@@ -43,8 +48,8 @@
         <h1>3-Seater Lounge</h1>
         <div class="price">R 4,999</div>
         <p class="meta">Warehouse price. In stock today. Page stays online — no 500 error between you and the sale.</p>
-        <div><strong style="font-size:13px">Colour</strong><div class="swatches"><div class="swatch a"></div><div class="swatch b"></div><div class="swatch c"></div></div></div>
-        <div><strong style="font-size:13px">Option</strong><div class="sizes"><div class="size active">3-seater</div><div class="size">+2-seater</div><div class="size">Full set</div></div></div>
+        <div><div class="field-label">Colour</strong><div class="swatches"><div class="swatch a"></div><div class="swatch b"></div><div class="swatch c"></div></div></div>
+        <div><div class="field-label">Option</strong><div class="sizes"><div class="size active">3-seater</div><div class="size">+2-seater</div><div class="size">Full set</div></div></div>
         <div class="btns">
           <a class="btn dark" href="#">Add to cart</a>
           <a class="btn light" href="../collection/">More lounges</a>
@@ -56,7 +61,7 @@
         </div>
       </div>
     </div>
-    <section style="padding-top:0">
+    <section class="reveal" style="padding-top:0">
       <div class="sec-head"><h2>More from the warehouse</h2><a href="../collection/">View all →</a></div>
       <div class="grid4">
         <a class="card" href="../product/"><div class="img"><img src="../../assets/fl-p2.jpg" alt="" /></div><h3>Corner Suite</h3><p>R 7,499</p></a>
@@ -73,5 +78,6 @@
     <div><strong>Warehouse</strong>Pickup</div>
     <div class="note">Shopify PDP · Stable page with stock and clear CTA</div>
   </footer>
+  <script src="../../premium.js"></script>
 </body>
 </html>

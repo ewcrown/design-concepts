@@ -7,22 +7,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../shared.css" />
   <style>
-    :root { --bg:#f6f1ea; --ink:#1f2a24; --muted:#5d6b63; --line:#d9cfc3; --cream:#e8f0ea; --accent:#2f6b4f; }
-    body { background:var(--bg); color:var(--ink); font-family:Manrope,sans-serif; }
-    .brand, h1, h2 { font-family:Fraunces,serif; font-weight:700; }
-    .ann { background:var(--accent); color:#f4fff8; }
-    .hero { display:grid; grid-template-columns:.9fr 1.1fr; min-height:580px; background:#fff; }
-    .hero-copy { padding:64px 48px; display:flex; flex-direction:column; justify-content:center; gap:18px; }
-    .btn.dark { background:var(--accent); border-color:var(--accent); }
-    .visit { background:var(--ink); color:#e7f0ea; }
-    .newsletter, footer { background:#15201b; color:#b7c4bc; }
-    .steps, .lookbook, .banner .copy { background:var(--cream); }
-    .value { background:#fff; }
-    @media (max-width:900px){ .hero{grid-template-columns:1fr;} }
+    :root{--bg:#f3efe6;--ink:#15231c;--muted:#5f6f66;--line:#d7d0c3;--cream:#e4efe7;--accent:#2a6b4d}
+    body{background:
+      radial-gradient(700px 380px at 0% 0%,rgba(42,107,77,.12),transparent 55%),
+      linear-gradient(180deg,#f8f4ec,var(--bg));
+      color:var(--ink);font-family:Manrope,sans-serif}
+    .brand,h1,h2{font-family:Fraunces,serif;font-weight:700}
+    .ann{background:var(--accent);color:#f4fff8}
+    .hero{display:grid;grid-template-columns:.88fr 1.12fr;min-height:min(86vh,740px);background:#fff;box-shadow:0 30px 80px rgba(21,35,28,.06)}
+    .hero-copy{padding:clamp(48px,6vw,80px) clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;gap:18px}
+    .hero-copy h1{font-size:clamp(40px,5.2vw,64px);max-width:11ch}
+    .btn.dark{background:var(--accent);border-color:var(--accent)}
+    .chip.active,.size.active{background:var(--accent);border-color:var(--accent)}
+    .visit{background:#122019;color:#e7f0ea}
+    .newsletter,footer{background:#0e1813;color:#b7c4bc}
+    .steps,.lookbook,.banner .copy{background:var(--cream)}
+    .value{background:#fff}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}}
+
   </style>
 </head>
 <body>
-  <div class="ann">No login wall · Browse products freely</div>
+  <div class="site-top">
+  <div class="ann">Free UK delivery · New drop now live</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="./">Suzy Loves Milo</a>
@@ -32,9 +39,10 @@
         <a href="product/">Featured</a>
         <a href="#">About</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
   </div>
+</div>
 
   <section class="hero">
     <div class="hero-copy">
@@ -53,7 +61,7 @@
     <div>Open catalog</div><div>Mobile-first</div><div>Fast checkout</div><div>Real inventory</div>
   </div>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>This week’s edit</h2><a href="collection/">Shop all →</a></div>
     <div class="grid4">
       <a class="card" href="product/"><div class="img"><img src="../assets/suzy-p1.jpg" alt="" /></div><h3>Rib Knit Set</h3><p>£54</p></a>
@@ -63,7 +71,7 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Shop by vibe</h2></div>
     <div class="split3">
       <a class="cat" href="collection/"><img src="../assets/suzy-p1.jpg" alt="" /><div class="shade"><h3>Sets</h3><p>Matched looks →</p></div></a>
@@ -72,14 +80,14 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="split2">
       <a class="panel" href="collection/"><img src="../assets/suzy-p2.jpg" alt="" /><div class="shade"><h3>New In</h3><p>Browse without signing in →</p></div></a>
       <a class="panel" href="collection/"><img src="../assets/suzy-p4.jpg" alt="" /><div class="shade"><h3>Best Sellers</h3><p>What people actually buy →</p></div></a>
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Most wanted</h2><a href="collection/">View all →</a></div>
     <div class="grid4">
       <a class="card" href="product/"><div class="img"><img src="../assets/suzy-hero.jpg" alt="" /></div><h3>Weekend Dress</h3><p>£62</p></a>
@@ -89,7 +97,7 @@
     </div>
   </section>
 
-  <section class="steps">
+  <section class="reveal steps">
     <div class="wrap grid3">
       <article><span>01</span><h3>Public products</h3><p>/products is a shop — not a login page.</p></article>
       <article><span>02</span><h3>Guest checkout</h3><p>Buy in minutes on mobile.</p></article>
@@ -97,7 +105,7 @@
     </div>
   </section>
 
-  <section class="lookbook">
+  <section class="reveal lookbook">
     <div class="wrap">
       <div class="sec-head"><h2>Worn in real life</h2><a href="#">Follow the brand →</a></div>
       <div class="look-grid">
@@ -110,7 +118,7 @@
     </div>
   </section>
 
-  <section class="wrap styling">
+  <section class="reveal wrap styling">
     <div class="media tall"><img src="../assets/suzy-p1.jpg" alt="" /></div>
     <div>
       <span class="eyebrow">WHY THIS BUILD</span>
@@ -120,7 +128,7 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>What customers want</h2></div>
     <div class="rev-grid">
       <div class="rev"><q>I just wanted to browse — not create an account first.</q><span>— Jess</span></div>
@@ -129,7 +137,7 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Built for trust</h2></div>
     <div class="values">
       <div class="value"><span>01</span><h3>Open browsing</h3><p>No gate before the catalog.</p></div>
@@ -139,7 +147,7 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="banner">
       <div class="copy">
         <span class="eyebrow">DROP ALERTS</span>
@@ -151,7 +159,7 @@
     </div>
   </section>
 
-  <section class="newsletter">
+  <section class="reveal newsletter">
     <h2>Be first to the drop</h2>
     <p>Email capture that works on every device.</p>
     <form class="form" onsubmit="return false"><input placeholder="Email address" /><button type="submit">Join</button></form>
@@ -164,5 +172,6 @@
     <div><strong>Brand</strong>About<br/>Contact</div>
     <div class="note">Shopify storefront concept · demo only</div>
   </footer>
+  <script src="../premium.js"></script>
 </body>
 </html>

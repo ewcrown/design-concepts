@@ -7,20 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared.css" />
   <style>
-    :root { --bg:#f4f6f3; --ink:#142018; --muted:#5a6a5e; --line:#d5ddd6; --accent:#2f7d32; }
-    body { background:var(--bg); color:var(--ink); font-family:"Source Sans 3",sans-serif; }
-    .brand { font-family:"Bebas Neue",sans-serif; font-size:34px; }
-    h1, h2 { font-family:"Bebas Neue",sans-serif; font-weight:400; }
-    .ann { background:var(--ink); color:#e8f5e9; }
-    .btn.dark { background:var(--accent); border-color:var(--accent); }
-    .size.active { background:var(--accent); border-color:var(--accent); }
-    footer { background:#0c1410; color:#a9b8ad; }
-    .deal { display:inline-block; background:#c62828; color:#fff; font-size:11px; font-weight:700; letter-spacing:.08em; padding:6px 10px; margin-bottom:8px; }
+    :root{--bg:#eef3ef;--ink:#101a13;--muted:#56665b;--line:#cfdad2;--accent:#25802c}
+    body{background:linear-gradient(180deg,#f5f8f5,var(--bg));color:var(--ink);font-family:"Source Sans 3",sans-serif}
+    .brand{font-family:"Bebas Neue",sans-serif;font-size:34px;letter-spacing:.05em}
+    h1,h2{font-family:"Bebas Neue",sans-serif;font-weight:400}
+    .ann{background:var(--ink);color:#e8f5e9}
+    .btn.dark,.chip.active,.size.active{background:var(--accent);border-color:var(--accent)}
+    .btn{border-radius:2px}
+    footer{background:#08110c;color:#a9b8ad}
+    .deal{display:inline-block;background:#c62828;color:#fff;font-size:10px;font-weight:700;letter-spacing:.12em;padding:7px 11px;margin-bottom:10px}
     .swatch.a{background:#2f7d32}.swatch.b{background:#1a1a1a}.swatch.c{background:#c4b49a}
+
   </style>
 </head>
 <body>
-  <div class="ann">Product concept · Specs, correct spelling, deal badge</div>
+<div class="site-top">
+  <div class="ann">Limited deal · Specs included · Courier or pickup</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="../">Animal Kingdom</a>
@@ -28,9 +30,12 @@
         <a href="../collection/">Shop</a>
         <a href="../product/">Deals</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
-    <div class="pdp">
+  </div>
+</div>
+  <div class="wrap">
+<div class="pdp">
       <div class="gallery">
         <div class="main"><img src="../../assets/ak-p4.jpg" alt="Canopy Shelter" /></div>
         <div class="thumbs">
@@ -46,8 +51,8 @@
         <h1>Canopy Shelter</h1>
         <div class="price">R 1,299 <span style="font-size:14px;color:var(--muted);text-decoration:line-through;font-weight:400;margin-left:8px">R 1,699</span></div>
         <p class="meta">3×3m pop-up canopy for campsites and markets. Spelled correctly. Specs included. Ready to buy.</p>
-        <div><strong style="font-size:13px">Colour</strong><div class="swatches"><div class="swatch a"></div><div class="swatch b"></div><div class="swatch c"></div></div></div>
-        <div><strong style="font-size:13px">Size</strong><div class="sizes"><div class="size active">3×3m</div><div class="size">3×4.5m</div></div></div>
+        <div><div class="field-label">Colour</strong><div class="swatches"><div class="swatch a"></div><div class="swatch b"></div><div class="swatch c"></div></div></div>
+        <div><div class="field-label">Size</strong><div class="sizes"><div class="size active">3×3m</div><div class="size">3×4.5m</div></div></div>
         <div class="btns">
           <a class="btn dark" href="#">Add to cart</a>
           <a class="btn light" href="../collection/">More deals</a>
@@ -59,7 +64,7 @@
         </div>
       </div>
     </div>
-    <section style="padding-top:0">
+    <section class="reveal" style="padding-top:0">
       <div class="sec-head"><h2>More deals</h2><a href="../collection/">View all →</a></div>
       <div class="grid4">
         <a class="card" href="../product/"><div class="img"><img src="../../assets/ak-p1.jpg" alt="" /></div><h3>Trail Pack 40L</h3><p>R 899</p></a>
@@ -76,5 +81,6 @@
     <div><strong>Stores</strong>Find us</div>
     <div class="note">Shopify PDP · Deal badge + correct product naming</div>
   </footer>
+  <script src="../../premium.js"></script>
 </body>
 </html>

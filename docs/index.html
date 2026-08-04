@@ -4,41 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shopify Store Concepts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root { --bg:#0f1115; --panel:#171a21; --ink:#eef1f6; --muted:#9aa3b2; --line:#2a303c; --accent:#5b8cff; }
+    :root { --bg:#0c0d10; --panel:#14161c; --ink:#f2f3f7; --muted:#9aa3b2; --line:#262a34; --accent:#d6b48a; }
     * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:"IBM Plex Sans",sans-serif; background:radial-gradient(1200px 600px at 10% -10%,#1a2440,transparent), var(--bg); color:var(--ink); min-height:100vh; }
+    body {
+      font-family:Manrope,sans-serif;
+      background:
+        radial-gradient(900px 500px at 80% -20%, rgba(214,180,138,.16), transparent 55%),
+        radial-gradient(700px 400px at 0% 10%, rgba(90,120,180,.12), transparent 50%),
+        var(--bg);
+      color:var(--ink); min-height:100vh;
+      -webkit-font-smoothing:antialiased;
+    }
     a { color:inherit; text-decoration:none; }
-    .wrap { max-width:1100px; margin:0 auto; padding:48px 24px 80px; }
-    header { margin-bottom:40px; }
-    .eyebrow { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:12px; }
-    h1 { font-family:"Space Grotesk",sans-serif; font-size:clamp(32px,5vw,48px); letter-spacing:-.03em; margin-bottom:12px; }
-    header p { color:var(--muted); max-width:560px; line-height:1.6; }
-    .grid { display:grid; gap:16px; }
-    .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:22px; display:grid; gap:14px; }
-    .card h2 { font-family:"Space Grotesk",sans-serif; font-size:22px; }
-    .card p { color:var(--muted); font-size:14px; line-height:1.5; }
+    .wrap { max-width:1120px; margin:0 auto; padding:64px 24px 96px; }
+    .eyebrow { font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:16px; }
+    h1 { font-family:"Instrument Serif",serif; font-size:clamp(42px,7vw,72px); letter-spacing:-.03em; line-height:.95; margin-bottom:16px; font-weight:400; }
+    header p { color:var(--muted); max-width:520px; line-height:1.7; font-size:16px; }
+    header { margin-bottom:48px; padding-bottom:36px; border-bottom:1px solid var(--line); }
+    .grid { display:grid; gap:14px; }
+    .card {
+      background:linear-gradient(180deg,rgba(255,255,255,.03),transparent), var(--panel);
+      border:1px solid var(--line); border-radius:16px; padding:26px;
+      display:grid; gap:16px; transition:transform .35s cubic-bezier(.22,1,.36,1), border-color .35s, box-shadow .35s;
+    }
+    .card:hover { transform:translateY(-4px); border-color:#3a4150; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+    .card h2 { font-family:"Instrument Serif",serif; font-size:30px; font-weight:400; letter-spacing:-.02em; }
+    .card p { color:var(--muted); font-size:14px; line-height:1.55; }
     .links { display:flex; flex-wrap:wrap; gap:10px; }
-    .links a { font-size:13px; font-weight:600; padding:10px 14px; border-radius:8px; border:1px solid var(--line); background:#12151c; }
-    .links a.primary { background:var(--accent); border-color:var(--accent); color:#081018; }
-    .meta { font-size:12px; color:var(--muted); }
-    footer { margin-top:40px; color:var(--muted); font-size:13px; line-height:1.6; }
+    .links a {
+      font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+      padding:12px 16px; border-radius:999px; border:1px solid var(--line); background:#10131a;
+      transition:background .25s, color .25s, border-color .25s;
+    }
+    .links a.primary { background:var(--accent); border-color:var(--accent); color:#1a140e; }
+    .links a:hover { border-color:#5a6478; }
+    .links a.primary:hover { filter:brightness(1.05); }
+    .meta { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+    footer { margin-top:48px; color:var(--muted); font-size:13px; letter-spacing:.04em; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="eyebrow">Shopify storefront concepts</div>
-      <h1>Homepage, collection &amp; product demos</h1>
-      <p>Concept storefronts for brand rebuilds — Home, Collection, and Product for each example. Not live production stores.</p>
+      <div class="eyebrow">Storefront concepts</div>
+      <h1>Shopify demos with<br/>home, collection &amp; product.</h1>
+      <p>Premium concept storefronts for brand rebuilds. Each example includes a full homepage, collection, and product page.</p>
     </header>
 
     <div class="grid">
       <article class="card">
         <div>
           <h2>Katie and May</h2>
-          <p>Boutique fashion · Working catalog + newsletter</p>
+          <p>Editorial boutique fashion — warm paper, refined typography, working catalog.</p>
         </div>
         <div class="links">
           <a class="primary" href="katie-and-may/">Home</a>
@@ -51,20 +70,20 @@
       <article class="card">
         <div>
           <h2>Suzy Loves Milo</h2>
-          <p>Fashion concept store · Open catalog browsing</p>
+          <p>Open lifestyle fashion storefront — no login wall, crisp product flow.</p>
         </div>
         <div class="links">
           <a class="primary" href="suzy-loves-milo/">Home</a>
           <a href="suzy-loves-milo/collection/">Collection</a>
           <a href="suzy-loves-milo/product/">Product</a>
         </div>
-        <div class="meta">UK</div>
+        <div class="meta">United Kingdom</div>
       </article>
 
       <article class="card">
         <div>
           <h2>Phases Africa</h2>
-          <p>Design furniture · Shoppable catalog</p>
+          <p>Gallery-grade furniture commerce — priced pieces, material presence.</p>
         </div>
         <div class="links">
           <a class="primary" href="phases-africa/">Home</a>
@@ -77,7 +96,7 @@
       <article class="card">
         <div>
           <h2>Animal Kingdom</h2>
-          <p>Outdoor + pet · Clear deals and product pages</p>
+          <p>Bold outdoor + pet retail — deal energy with polished product pages.</p>
         </div>
         <div class="links">
           <a class="primary" href="animal-kingdom/">Home</a>
@@ -90,7 +109,7 @@
       <article class="card">
         <div>
           <h2>Furniture Liquidation</h2>
-          <p>Warehouse furniture · Reliable full catalog</p>
+          <p>Warehouse-scale furniture — industrial confidence, clear suite catalog.</p>
         </div>
         <div class="links">
           <a class="primary" href="furniture-liquidation/">Home</a>
@@ -101,9 +120,7 @@
       </article>
     </div>
 
-    <footer>
-      Shopify storefront concepts · Demo only
-    </footer>
+    <footer>Shopify storefront concepts · Demo only</footer>
   </div>
 </body>
 </html>

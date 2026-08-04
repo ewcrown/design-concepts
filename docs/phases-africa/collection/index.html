@@ -7,16 +7,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared.css" />
   <style>
-    :root { --bg:#f3efe6; --ink:#1a120c; --muted:#6a5a4c; --line:#d8cdbc; --accent:#b3541e; }
-    body { background:var(--bg); color:var(--ink); font-family:"DM Sans",sans-serif; }
-    .brand, h1, h2 { font-family:Syne,sans-serif; font-weight:800; }
-    .ann { background:var(--accent); color:#fff8f0; }
-    .chip.active { background:var(--accent); border-color:var(--accent); }
-    footer { background:#120c08; color:#c9b9a6; }
+    :root{--bg:#f1ebe0;--ink:#17100b;--muted:#6b5a4b;--line:#d6caba;--accent:#a84a16}
+    body{background:linear-gradient(180deg,#f6f0e6,var(--bg));color:var(--ink);font-family:"DM Sans",sans-serif}
+    .brand,h1,h2{font-family:Syne,sans-serif;font-weight:800}
+    .ann{background:var(--accent);color:#fff8f0}
+    .btn.dark,.chip.active,.size.active{background:var(--accent);border-color:var(--accent)}
+    .btn{border-radius:2px}
+    footer{background:#100b07;color:#c9b9a6}
+    .swatch.a{background:#8b5a2b}.swatch.b{background:#2b2118}.swatch.c{background:#c4b49a}
+
   </style>
 </head>
 <body>
-  <div class="ann">Collection concept · Priced furniture catalog</div>
+<div class="site-top">
+  <div class="ann">Furniture collection · Priced & ready to order</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="../">Phases Africa</a>
@@ -24,9 +28,12 @@
         <a href="../collection/">Collections</a>
         <a href="../product/">Featured</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
-    <section>
+  </div>
+</div>
+  <div class="wrap">
+<section class="reveal">
       <div class="toolbar">
         <div><h1>Furniture</h1><p>Retail catalog with clear prices</p></div>
         <select><option>Featured</option><option>Price</option><option>Newest</option></select>
@@ -53,5 +60,6 @@
     <div><strong>Trade</strong>Enquiries</div>
     <div class="note">Shopify collection · Shopable pieces with prices</div>
   </footer>
+  <script src="../../premium.js"></script>
 </body>
 </html>

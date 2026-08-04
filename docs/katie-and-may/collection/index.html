@@ -7,15 +7,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared.css" />
   <style>
-    :root { --bg:#faf7f2; --ink:#281f1b; --muted:#6e5b52; --line:#e4d8cc; --cream:#ece2d6; }
-    body { background:var(--bg); color:var(--ink); font-family:Outfit,sans-serif; }
-    .brand, h1, h2 { font-family:"Cormorant Garamond",serif; font-weight:600; }
-    .ann { background:var(--ink); color:#f5efe8; }
-    footer { background:#1a1411; color:#cbbfb4; }
+    :root{--bg:#f7f1e8;--ink:#1f1713;--muted:#7a6558;--line:#e2d4c4;--cream:#ebe1d3}
+    body{background:linear-gradient(180deg,#faf6f0,var(--bg));color:var(--ink);font-family:Outfit,sans-serif}
+    .brand,h1,h2{font-family:"Cormorant Garamond",serif;font-weight:600}
+    .brand{letter-spacing:.12em}
+    .ann{background:var(--ink);color:#f6efe7}
+    footer{background:#140f0c;color:#cbbfb4}
+    .btn{border-radius:2px}
+    .swatch.a{background:#c4a484}.swatch.b{background:#2c2c2c}.swatch.c{background:#7a8f7a}
+
   </style>
 </head>
 <body>
-  <div class="ann">Collection concept · Products actually appear</div>
+<div class="site-top">
+  <div class="ann">New arrivals · Curated for the season</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="../">Katie &amp; May</a>
@@ -25,10 +30,12 @@
         <a href="../collection/">Dresses</a>
         <a href="../product/">Featured</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
-
-    <section>
+  </div>
+</div>
+  <div class="wrap">
+<section class="reveal">
       <div class="toolbar">
         <div>
           <h1>New Arrivals</h1>
@@ -67,5 +74,6 @@
     <div><strong>Visit</strong>Chapel Allerton</div>
     <div class="note">Shopify collection concept · No more empty shop pages</div>
   </footer>
+  <script src="../../premium.js"></script>
 </body>
 </html>

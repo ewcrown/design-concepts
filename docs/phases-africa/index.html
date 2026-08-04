@@ -7,26 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../shared.css" />
   <style>
-    :root { --bg:#f3efe6; --ink:#1a120c; --muted:#6a5a4c; --line:#d8cdbc; --cream:#e7d7b8; --accent:#b3541e; }
-    body { background:var(--bg); color:var(--ink); font-family:"DM Sans",sans-serif; }
-    .brand, h1, h2 { font-family:Syne,sans-serif; font-weight:800; }
-    .ann { background:var(--accent); color:#fff8f0; }
-    .hero { position:relative; min-height:620px; color:#fff; }
-    .hero .media { position:absolute; inset:0; }
-    .hero .media::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(20,12,8,.78),rgba(20,12,8,.25)); }
-    .hero-copy { position:relative; z-index:1; max-width:640px; padding:120px 8vw 80px; display:grid; gap:18px; }
-    .btn.dark { background:var(--accent); border-color:var(--accent); }
-    .btn.light { color:#fff; border-color:#fff; }
-    .visit { background:#1a120c; color:#f0e6d8; }
-    .newsletter, footer { background:#120c08; color:#c9b9a6; }
-    .steps { background:#1a120c; color:#f0e6d8; }
-    .steps span, .steps p { color:#c9b9a6; }
-    .lookbook, .banner .copy { background:var(--cream); }
-    .value { background:#fff; }
+    :root{--bg:#f1ebe0;--ink:#17100b;--muted:#6b5a4b;--line:#d6caba;--cream:#e4d2b0;--accent:#a84a16}
+    body{background:
+      radial-gradient(800px 500px at 100% 0%,rgba(168,74,22,.14),transparent 50%),
+      linear-gradient(180deg,#f6f0e6,var(--bg));
+      color:var(--ink);font-family:"DM Sans",sans-serif}
+    .brand,h1,h2{font-family:Syne,sans-serif;font-weight:800}
+    .ann{background:var(--accent);color:#fff8f0}
+    .hero{position:relative;min-height:min(90vh,780px);color:#fff}
+    .hero .media{position:absolute;inset:0}
+    .hero .media::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(16,10,6,.82),rgba(16,10,6,.25) 55%,rgba(16,10,6,.45))}
+    .hero-copy{position:relative;z-index:1;max-width:680px;padding:clamp(100px,14vw,160px) clamp(24px,7vw,8vw) 90px;display:grid;gap:18px}
+    .hero-copy h1{font-size:clamp(44px,6.5vw,78px);max-width:10ch}
+    .btn.dark{background:var(--accent);border-color:var(--accent);border-radius:2px}
+    .btn.light{color:#fff;border-color:rgba(255,255,255,.7);border-radius:2px}
+    .visit{background:#17100b;color:#f0e6d8}
+    .newsletter,footer{background:#100b07;color:#c9b9a6}
+    .steps{background:#17100b;color:#f0e6d8}
+    .steps span,.steps p{color:#c9b9a6}
+    .lookbook,.banner .copy{background:var(--cream)}
+    .value{background:#fff}
+
   </style>
 </head>
 <body>
-  <div class="ann">From portfolio inquiry → real ecommerce shop</div>
+  <div class="site-top">
+  <div class="ann">Made to order · Trade & retail</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="./">Phases Africa</a>
@@ -36,9 +42,10 @@
         <a href="product/">Featured</a>
         <a href="#">Projects</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
   </div>
+</div>
 
   <section class="hero">
     <div class="media"><img src="../assets/phases-hero.jpg" alt="Phases Africa" /></div>
@@ -57,7 +64,7 @@
     <div>Priced catalog</div><div>Working contact</div><div>Project + retail</div><div>Mobile ready</div>
   </div>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Featured pieces</h2><a href="collection/">All furniture →</a></div>
     <div class="grid4">
       <a class="card" href="product/"><div class="img"><img src="../assets/phases-p1.jpg" alt="" /></div><h3>Lounge Chair</h3><p>R 8,400</p></a>
@@ -67,7 +74,7 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Shop rooms</h2></div>
     <div class="split3">
       <a class="cat" href="collection/"><img src="../assets/phases-p1.jpg" alt="" /><div class="shade"><h3>Living</h3><p>Seating →</p></div></a>
@@ -76,14 +83,14 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="split2">
       <a class="panel" href="collection/"><img src="../assets/phases-p1.jpg" alt="" /><div class="shade"><h3>Living</h3><p>Shop seating →</p></div></a>
       <a class="panel" href="collection/"><img src="../assets/phases-p3.jpg" alt="" /><div class="shade"><h3>Dining</h3><p>Tables &amp; benches →</p></div></a>
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Made to order</h2><a href="collection/">View lead times →</a></div>
     <div class="grid4">
       <a class="card" href="product/"><div class="img"><img src="../assets/phases-hero.jpg" alt="" /></div><h3>Daybed</h3><p>From R 12,500</p></a>
@@ -93,7 +100,7 @@
     </div>
   </section>
 
-  <section class="steps">
+  <section class="reveal steps">
     <div class="wrap grid3">
       <article><span>01</span><h3>Buyable products</h3><p>Price, stock, and add to cart — not “enquire only.”</p></article>
       <article><span>02</span><h3>Fixed contact</h3><p>No broken contact URL. Forms that reach you.</p></article>
@@ -101,7 +108,7 @@
     </div>
   </section>
 
-  <section class="wrap styling">
+  <section class="reveal wrap styling">
     <div>
       <span class="eyebrow">STUDIO + STORE</span>
       <h2>Design house energy. Ecommerce clarity.</h2>
@@ -111,7 +118,7 @@
     <div class="media tall"><img src="../assets/phases-p2.jpg" alt="" /></div>
   </section>
 
-  <section class="lookbook">
+  <section class="reveal lookbook">
     <div class="wrap">
       <div class="sec-head"><h2>Material &amp; craft</h2></div>
       <div class="look-grid">
@@ -124,7 +131,7 @@
     </div>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="sec-head"><h2>Process</h2></div>
     <div class="values">
       <div class="value"><span>01</span><h3>Browse</h3><p>Priced pieces online.</p></div>
@@ -134,7 +141,7 @@
     </div>
   </section>
 
-  <section class="visit wrap">
+  <section class="reveal visit wrap">
     <div>
       <span class="eyebrow light">TRADE &amp; RETAIL</span>
       <h2>Projects welcome.<br/>Products ready.</h2>
@@ -148,7 +155,7 @@
     </ul>
   </section>
 
-  <section class="wrap">
+  <section class="reveal wrap">
     <div class="banner">
       <div class="copy">
         <span class="eyebrow">WHY SHOPIFY</span>
@@ -160,7 +167,7 @@
     </div>
   </section>
 
-  <section class="newsletter">
+  <section class="reveal newsletter">
     <h2>Project updates &amp; new releases</h2>
     <p>Working signup for trade and retail buyers.</p>
     <form class="form" onsubmit="return false"><input placeholder="Email address" /><button type="submit">Subscribe</button></form>
@@ -173,5 +180,6 @@
     <div><strong>Trade</strong>Enquiries</div>
     <div class="note">Shopify storefront concept · demo only</div>
   </footer>
+  <script src="../premium.js"></script>
 </body>
 </html>

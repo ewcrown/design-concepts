@@ -7,17 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared.css" />
   <style>
-    :root { --bg:#f4f6f3; --ink:#142018; --muted:#5a6a5e; --line:#d5ddd6; --accent:#2f7d32; }
-    body { background:var(--bg); color:var(--ink); font-family:"Source Sans 3",sans-serif; }
-    .brand { font-family:"Bebas Neue",sans-serif; font-size:34px; }
-    h1, h2 { font-family:"Bebas Neue",sans-serif; font-weight:400; }
-    .ann { background:var(--ink); color:#e8f5e9; }
-    .chip.active { background:var(--accent); border-color:var(--accent); }
-    footer { background:#0c1410; color:#a9b8ad; }
+    :root{--bg:#eef3ef;--ink:#101a13;--muted:#56665b;--line:#cfdad2;--accent:#25802c}
+    body{background:linear-gradient(180deg,#f5f8f5,var(--bg));color:var(--ink);font-family:"Source Sans 3",sans-serif}
+    .brand{font-family:"Bebas Neue",sans-serif;font-size:34px;letter-spacing:.05em}
+    h1,h2{font-family:"Bebas Neue",sans-serif;font-weight:400}
+    .ann{background:var(--ink);color:#e8f5e9}
+    .btn.dark,.chip.active,.size.active{background:var(--accent);border-color:var(--accent)}
+    .btn{border-radius:2px}
+    footer{background:#08110c;color:#a9b8ad}
+    .deal{display:inline-block;background:#c62828;color:#fff;font-size:10px;font-weight:700;letter-spacing:.12em;padding:7px 11px;margin-bottom:10px}
+    .swatch.a{background:#2f7d32}.swatch.b{background:#1a1a1a}.swatch.c{background:#c4b49a}
+
   </style>
 </head>
 <body>
-  <div class="ann">Collection concept · Deals with clear categories</div>
+<div class="site-top">
+  <div class="ann">Deals · Camping · Pets · Outdoor</div>
   <div class="wrap">
     <nav>
       <a class="brand" href="../">Animal Kingdom</a>
@@ -25,9 +30,12 @@
         <a href="../collection/">Shop</a>
         <a href="../product/">Deals</a>
       </div>
-      <span>Bag 0</span>
+      <span class="bag">Bag 0</span>
     </nav>
-    <section>
+  </div>
+</div>
+  <div class="wrap">
+<section class="reveal">
       <div class="toolbar">
         <div><h1>Shop deals</h1><p>Camping · Pets · Outdoor</p></div>
         <select><option>Best deals</option><option>Price</option><option>Newest</option></select>
@@ -54,5 +62,6 @@
     <div><strong>Stores</strong>Find us</div>
     <div class="note">Shopify collection · Online deals that match the floor</div>
   </footer>
+  <script src="../../premium.js"></script>
 </body>
 </html>
