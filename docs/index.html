@@ -46,6 +46,18 @@
     .links a.primary:hover { filter:brightness(1.05); }
     .meta { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
     footer { margin-top:48px; color:var(--muted); font-size:13px; letter-spacing:.04em; }
+    .section-label {
+      margin:56px 0 20px; padding-top:36px; border-top:1px solid var(--line);
+      font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); font-weight:700;
+    }
+    .section-label + .sub { color:var(--muted); font-size:14px; line-height:1.6; max-width:520px; margin:-8px 0 20px; }
+    .showcase-card {
+      background:linear-gradient(180deg,rgba(214,180,138,.08),transparent), var(--panel);
+      border:1px solid var(--line); border-radius:16px; padding:28px;
+      display:grid; gap:14px;
+    }
+    .showcase-card h2 { font-family:"Instrument Serif",serif; font-size:30px; font-weight:400; }
+    .showcase-card p { color:var(--muted); font-size:14px; line-height:1.55; }
   </style>
 </head>
 <body>
@@ -120,6 +132,24 @@
           <a href="furniture-liquidation/product/">Product</a>
         </div>
         <div class="meta">South Africa</div>
+      </article>
+    </div>
+
+    <div class="section-label">Showcase portfolio</div>
+    <p class="sub">15 additional concepts across Waves A / B / C — denser homes, distinct collection systems, and new-school product galleries. Client concepts above are unchanged.</p>
+    <div class="grid">
+      <article class="showcase-card">
+        <div>
+          <h2>15-concept showcase</h2>
+          <p>Wave A fictional (≥20 sections) · Wave B Tier-B leads (≥24) · Wave C mix (≥30). Full catalog with home, collection, and product for each brand.</p>
+        </div>
+        <div class="links">
+          <a class="primary" href="showcase/">Open showcase</a>
+          <a href="showcase/northline-athletics/">Northline</a>
+          <a href="showcase/river-quarter/">River Quarter</a>
+          <a href="showcase/sandton-atelier/">Sandton Atelier</a>
+        </div>
+        <div class="meta">45 pages · isolated from client demos</div>
       </article>
     </div>
 
