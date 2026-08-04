@@ -17,14 +17,14 @@ Replace: `[YOUR NAME]` · `[AGENCY]` · use the **Home** URL as `[CONCEPT LINK]`
 
 ## Concept links by brand
 
-Base: `https://YOUR_USERNAME.github.io/REPO_NAME`
+Base: `https://ewcrown.github.io/customer-finder`
 
 ### 1. Katie and May (warm editorial boutique)
 | Page | Link |
 |------|------|
-| Homepage | https://YOUR_USERNAME.github.io/REPO_NAME/katie-and-may/ |
-| Collection | https://YOUR_USERNAME.github.io/REPO_NAME/katie-and-may/collection.html |
-| Product | https://YOUR_USERNAME.github.io/REPO_NAME/katie-and-may/product.html |
+| Homepage | https://ewcrown.github.io/customer-finder/katie-and-may/ |
+| Collection | https://ewcrown.github.io/customer-finder/katie-and-may/collection.html |
+| Product | https://ewcrown.github.io/customer-finder/katie-and-may/product.html |
 | Site | https://www.katieandmay.co.uk |
 | Email | Catherine@katieandmay.co.uk |
 
@@ -35,9 +35,9 @@ Base: `https://YOUR_USERNAME.github.io/REPO_NAME`
 ### 2. Suzy Loves Milo (open catalog / lifestyle)
 | Page | Link |
 |------|------|
-| Homepage | https://YOUR_USERNAME.github.io/REPO_NAME/suzy-loves-milo/ |
-| Collection | https://YOUR_USERNAME.github.io/REPO_NAME/suzy-loves-milo/collection.html |
-| Product | https://YOUR_USERNAME.github.io/REPO_NAME/suzy-loves-milo/product.html |
+| Homepage | https://ewcrown.github.io/customer-finder/suzy-loves-milo/ |
+| Collection | https://ewcrown.github.io/customer-finder/suzy-loves-milo/collection.html |
+| Product | https://ewcrown.github.io/customer-finder/suzy-loves-milo/product.html |
 | Site | https://suzylovesmiloconcept.com |
 | Email | info@suzylovesmilo.co.uk |
 
@@ -48,9 +48,9 @@ Base: `https://YOUR_USERNAME.github.io/REPO_NAME`
 ### 3. Phases Africa (earth gallery / made-to-order)
 | Page | Link |
 |------|------|
-| Homepage | https://YOUR_USERNAME.github.io/REPO_NAME/phases-africa/ |
-| Collection | https://YOUR_USERNAME.github.io/REPO_NAME/phases-africa/collection.html |
-| Product | https://YOUR_USERNAME.github.io/REPO_NAME/phases-africa/product.html |
+| Homepage | https://ewcrown.github.io/customer-finder/phases-africa/ |
+| Collection | https://ewcrown.github.io/customer-finder/phases-africa/collection.html |
+| Product | https://ewcrown.github.io/customer-finder/phases-africa/product.html |
 | Site | https://www.phasesafrica.com |
 | Email | info@phasesafrica.com |
 
@@ -61,9 +61,9 @@ Base: `https://YOUR_USERNAME.github.io/REPO_NAME`
 ### 4. Animal Kingdom (outdoor + pet deals)
 | Page | Link |
 |------|------|
-| Homepage | https://YOUR_USERNAME.github.io/REPO_NAME/animal-kingdom/ |
-| Collection | https://YOUR_USERNAME.github.io/REPO_NAME/animal-kingdom/collection.html |
-| Product | https://YOUR_USERNAME.github.io/REPO_NAME/animal-kingdom/product.html |
+| Homepage | https://ewcrown.github.io/customer-finder/animal-kingdom/ |
+| Collection | https://ewcrown.github.io/customer-finder/animal-kingdom/collection.html |
+| Product | https://ewcrown.github.io/customer-finder/animal-kingdom/product.html |
 | Site | https://animalkingdom.co.za |
 | Email | info@animal-kingdom.co.za |
 
@@ -74,9 +74,9 @@ Base: `https://YOUR_USERNAME.github.io/REPO_NAME`
 ### 5. Furniture Liquidation (bold warehouse commercial)
 | Page | Link |
 |------|------|
-| Homepage | https://YOUR_USERNAME.github.io/REPO_NAME/furniture-liquidation/ |
-| Collection | https://YOUR_USERNAME.github.io/REPO_NAME/furniture-liquidation/collection.html |
-| Product | https://YOUR_USERNAME.github.io/REPO_NAME/furniture-liquidation/product.html |
+| Homepage | https://ewcrown.github.io/customer-finder/furniture-liquidation/ |
+| Collection | https://ewcrown.github.io/customer-finder/furniture-liquidation/collection.html |
+| Product | https://ewcrown.github.io/customer-finder/furniture-liquidation/product.html |
 | Site | https://www.loungesuiteforsale.co.za |
 | Email | glen@furnitureliquidation.co.za |
 
