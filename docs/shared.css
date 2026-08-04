@@ -170,6 +170,11 @@ section{
   position:relative;
   clear:both;
 }
+section.hero,
+.hero{
+  padding:0;
+  margin:0;
+}
 section.steps,
 section.lookbook{
   padding-block:var(--section-y);
@@ -515,7 +520,16 @@ main{display:block;width:100%}
 .faq p{margin-top:var(--s-3);font-size:14px;color:var(--muted,#666);line-height:1.65;max-width:58ch}
 
 /* ——— Shared hero rhythm (brands can override layout) ——— */
-.hero{min-height:min(78vh,680px)}
+.hero{
+  min-height:min(78vh,680px);
+  padding:0 !important;
+  margin:0;
+}
+.hero.reveal,
+.hero.reveal.in{
+  transform:none;
+  opacity:1;
+}
 .hero-copy{
   padding:clamp(40px,6vw,72px) clamp(28px,4vw,52px);
   display:flex;
