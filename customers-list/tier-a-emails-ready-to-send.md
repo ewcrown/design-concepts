@@ -21,8 +21,8 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 | Page | Link |
 |------|------|
 | Homepage | https://ewcrown.github.io/shopify-concepts/katie-and-may/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/katie-and-may/collection.html |
-| Product | https://ewcrown.github.io/shopify-concepts/katie-and-may/product.html |
+| Collection | https://ewcrown.github.io/shopify-concepts/katie-and-may/collection/ |
+| Product | https://ewcrown.github.io/shopify-concepts/katie-and-may/product/ |
 | Site | https://www.katieandmay.co.uk |
 | Email | Catherine@katieandmay.co.uk |
 
@@ -34,8 +34,8 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 | Page | Link |
 |------|------|
 | Homepage | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/collection.html |
-| Product | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/product.html |
+| Collection | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/collection/ |
+| Product | https://ewcrown.github.io/shopify-concepts/suzy-loves-milo/product/ |
 | Site | https://suzylovesmiloconcept.com |
 | Email | info@suzylovesmilo.co.uk |
 
@@ -47,8 +47,8 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 | Page | Link |
 |------|------|
 | Homepage | https://ewcrown.github.io/shopify-concepts/phases-africa/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/phases-africa/collection.html |
-| Product | https://ewcrown.github.io/shopify-concepts/phases-africa/product.html |
+| Collection | https://ewcrown.github.io/shopify-concepts/phases-africa/collection/ |
+| Product | https://ewcrown.github.io/shopify-concepts/phases-africa/product/ |
 | Site | https://www.phasesafrica.com |
 | Email | info@phasesafrica.com |
 
@@ -60,8 +60,8 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 | Page | Link |
 |------|------|
 | Homepage | https://ewcrown.github.io/shopify-concepts/animal-kingdom/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/animal-kingdom/collection.html |
-| Product | https://ewcrown.github.io/shopify-concepts/animal-kingdom/product.html |
+| Collection | https://ewcrown.github.io/shopify-concepts/animal-kingdom/collection/ |
+| Product | https://ewcrown.github.io/shopify-concepts/animal-kingdom/product/ |
 | Site | https://animalkingdom.co.za |
 | Email | info@animal-kingdom.co.za |
 
@@ -73,8 +73,8 @@ Base: `https://ewcrown.github.io/shopify-concepts`
 | Page | Link |
 |------|------|
 | Homepage | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/ |
-| Collection | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/collection.html |
-| Product | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/product.html |
+| Collection | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/collection/ |
+| Product | https://ewcrown.github.io/shopify-concepts/furniture-liquidation/product/ |
 | Site | https://www.loungesuiteforsale.co.za |
 | Email | glen@furnitureliquidation.co.za |
 
