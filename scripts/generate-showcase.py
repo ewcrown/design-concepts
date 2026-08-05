@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 # Skip handcrafted brands when regenerating showcase (custom designer builds)
-SKIP_SLUGS = {"river-quarter", "im-naturkosmetik"}
+SKIP_SLUGS = {"river-quarter", "im-naturkosmetik", "fieldpaw"}
 
 
 def img(seed: str, w=1200, h=1500) -> str:
