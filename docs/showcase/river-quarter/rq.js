@@ -91,7 +91,63 @@
     restart();
   });
 
-  // PDP gallery slider
+  // PDP couture gallery (thumbs + stage + video)
+  document.querySelectorAll("[data-gal-couture]").forEach((root) => {
+    const frames = [...root.querySelectorAll(".stage .frame")];
+    const thumbs = [...root.querySelectorAll(".thumbs button")];
+    const counter = root.querySelector("[data-count]");
+    if (!frames.length) return;
+    let i = 0;
+
+    const sync = () => {
+      frames.forEach((f, fi) => {
+        const on = fi === i;
+        f.classList.toggle("on", on);
+        const vid = f.querySelector("video");
+        if (vid) {
+          if (on) vid.play().catch(() => {});
+          else vid.pause();
+        }
+      });
+      thumbs.forEach((t, ti) => t.classList.toggle("on", ti === i));
+      if (counter) counter.textContent = String(i + 1).padStart(2, "0");
+    };
+    const go = (n) => {
+      i = (n + frames.length) % frames.length;
+      sync();
+    };
+
+    thumbs.forEach((t) => {
+      t.addEventListener("click", () => go(Number(t.dataset.go || 0)));
+    });
+    root.querySelector("[data-prev]")?.addEventListener("click", () => go(i - 1));
+    root.querySelector("[data-next]")?.addEventListener("click", () => go(i + 1));
+
+    let startX = 0;
+    const stage = root.querySelector(".stage");
+    stage?.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+    stage?.addEventListener("touchend", (e) => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) go(dx < 0 ? i + 1 : i - 1);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!root.offsetParent) return;
+      if (e.key === "ArrowRight") go(i + 1);
+      if (e.key === "ArrowLeft") go(i - 1);
+    });
+
+    sync();
+  });
+
+  document.querySelectorAll(".pdp-info .swatches button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.parentElement.querySelectorAll("button").forEach((b) => b.classList.remove("on"));
+      btn.classList.add("on");
+    });
+  });
+
+  // Legacy gal-slider (if any)
   document.querySelectorAll("[data-gal-slider]").forEach((root) => {
     const slidesEl = root.querySelector(".slides");
     const frames = [...root.querySelectorAll(".slides .frame")];
