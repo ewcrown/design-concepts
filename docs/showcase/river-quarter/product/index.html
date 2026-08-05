@@ -30,11 +30,24 @@
 
   <section class="pdp">
     <div class="pdp-gal">
-      <div class="gal-snap">
-        <div class="frame"><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=80" alt="" /><div class="cap">Look 01 · Full</div></div>
-        <div class="frame"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80" alt="" /><div class="cap">Look 02 · Movement</div></div>
-        <div class="frame"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80" alt="" /><div class="cap">Look 03 · Detail</div></div>
-        <div class="frame"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80" alt="" /><div class="cap">Look 04 · Styling</div></div>
+      <div class="gal-slider" data-gal-slider>
+        <div class="main">
+          <div class="slides">
+            <div class="frame"><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=80" alt="" /></div>
+            <div class="frame"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80" alt="" /></div>
+            <div class="frame"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80" alt="" /></div>
+            <div class="frame"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80" alt="" /></div>
+          </div>
+          <button class="arrow prev" type="button" data-prev aria-label="Previous">‹</button>
+          <button class="arrow next" type="button" data-next aria-label="Next">›</button>
+        </div>
+        <div class="thumbs">
+          <button class="on" type="button"><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+          <button type="button"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+          <button type="button"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+          <button type="button"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+        </div>
+        <div class="progress"><span></span></div>
       </div>
     </div>
     <div class="pdp-info">
@@ -94,10 +107,6 @@
       <div class="bar"><span>© 2026 River Quarter</span><span>Concept / not a live store</span></div>
     </div>
   </footer>
-  <script src="../../showcase.js"></script>
-  <script>
-    const top = document.querySelector(".rq-top");
-    if (top) window.addEventListener("scroll", () => top.classList.toggle("scrolled", window.scrollY > 12), { passive: true });
-  </script>
+  <script src="../rq.js"></script>
 </body>
 </html>
