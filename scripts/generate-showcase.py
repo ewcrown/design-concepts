@@ -5,10 +5,8 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1] / "docs" / "showcase"
-CSS = "../showcase.css"
-JS = "../showcase.js"
-# From brand subfolder pages: ../../showcase.css — fixed per depth
+# Skip handcrafted brands when regenerating showcase (custom designer builds)
+SKIP_SLUGS = {"river-quarter"}
 
 
 def img(seed: str, w=1200, h=1500) -> str:
