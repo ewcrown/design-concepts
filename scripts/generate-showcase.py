@@ -1236,6 +1236,9 @@ def write_showcase_index():
 def main():
     ROOT.mkdir(parents=True, exist_ok=True)
     for b in BRANDS:
+        if b["slug"] in SKIP_SLUGS:
+            print(f"↷ skip custom {b['slug']}")
+            continue
         write_brand(b)
     write_showcase_index()
     print(f"\nDone: {len(BRANDS)} brands → {ROOT}")
