@@ -3,45 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <title>i+m Naturkosmetik — Collection Concept</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../showcase.css" />
+  <title>i+m — Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../im.css" />
 </head>
-<body class="theme-im">
-<div class="demo-tag">Concept demo</div>
-
-<div class="sx-top">
-  <div class="sx-ann">Natural cosmetics · Berlin-made · Vegan formulas</div>
-  <div class="wrap">
-    <nav class="sx-nav">
-      <a class="sx-brand" href="../">i+m</a>
-      <div class="sx-links"><a href="./">Face</a><a href="./">Body</a><a href="./">Hair</a><a href="./">Sets</a><a href="./">Ingredients</a></div>
-      <span class="sx-bag">Bag 0</span>
-    </nav>
-  </div>
-</div>
-
-<div class="col-hero wrap">
-  <div class="sx-eyebrow">Collection · masonry system</div>
-  <h1 class="sx-h1">i+m Naturkosmetik</h1>
-  <p class="sx-lead">Ingredient-led natural beauty with transparent formulas and calm, clinical clarity.</p>
-  <div class="facets"><button class="active">All</button><button class="">Face</button><button class="">Body</button><button class="">Hair</button><button class="">Sets</button></div>
-</div>
-<section class="sx-sec"><div class="wrap col-masonry"><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms1/1200/1500" alt="" /></div><h3>Hydro Face Cream</h3><p>€28</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms2/1200/1500" alt="" /></div><h3>Cleanse Balm</h3><p>€22</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms3/1200/1500" alt="" /></div><h3>Serum Vitamin C</h3><p>€34</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms4/1200/1500" alt="" /></div><h3>Body Oil Rose</h3><p>€26</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms5/1200/1500" alt="" /></div><h3>Hair Mask</h3><p>€24</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms6/1200/1500" alt="" /></div><h3>Lip Care Duo</h3><p>€14</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms7/1200/1500" alt="" /></div><h3>Travel Kit</h3><p>€42</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms8/1200/1500" alt="" /></div><h3>SPF Fluid</h3><p>€29</p></a><a class="pcard" href="../product/"><div class="img"><img src="https://picsum.photos/seed/imnat-ms9/1200/1500" alt="" /></div><h3>Hydro Face Cream</h3><p>€28</p></a></div></section>
-<footer class="mega-footer">
-  <div class="wrap">
-    <div class="grid">
-      <div>
-        <div class="sx-brand">i+m Naturkosmetik</div>
-        <p style="margin-top:14px;max-width:32ch;font-size:14px;opacity:.7">Shopify storefront concept — portfolio demo only.</p>
-      </div>
-      <div><h4>Shop</h4><a href="./">Face</a><a href="./">Body</a><a href="./">Hair</a></div><div><h4>Help</h4><a href="./">Shipping</a><a href="./">Returns</a></div><div><h4>More</h4><a href="./">Home</a><a href="./">Product</a></div>
+<body>
+  <div class="demo-tag">Concept demo</div>
+  <div class="ann">Free shipping from €39</div>
+  <div class="top">
+    <div class="wrap">
+      <nav class="nav">
+        <a class="brand" href="../">i+m</a>
+        <div class="links">
+          <a href="./">Shop</a>
+          <a href="./">Face</a>
+          <a href="./">Hair</a>
+          <a href="./">Body</a>
+          <a href="../product/">Featured</a>
+        </div>
+        <span class="bag">Bag 0</span>
+      </nav>
     </div>
-    <div class="bar"><span>© 2026 i+m Naturkosmetik</span><span>Concept / not a live store</span></div>
   </div>
-</footer>
 
-<script src="../../showcase.js"></script>
+  <header class="col-hero">
+    <div class="eyebrow">Collection</div>
+    <h1 class="h1">Bestsellers</h1>
+    <p class="lead" style="margin-inline:auto">Simple grid. Clear filters. Shop by what you need.</p>
+    <div class="facets">
+      <button class="active">All</button>
+      <button>Face</button>
+      <button>Hair</button>
+      <button>Body</button>
+      <button>Bundles</button>
+    </div>
+  </header>
+
+  <section class="col-grid">
+    <div class="wrap">
+      <div class="grid4">
+        <a class="pcard" href="../product/"><div class="img"><span class="badge">Best</span><img src="https://images.unsplash.com/photo-1620916568199-49b8948011e2?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Hydro Face Cream</h3><p class="price">€28</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1570194065650-d99fb4b38b17?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Cleanse Balm</h3><p class="price">€22</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1620916297397-a4a5402a3ea6?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Serum Vitamin C</h3><p class="price">€34</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1608248543804-ba401a9c1f6d?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Body Oil Rose</h3><p class="price">€26</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>SPF Fluid</h3><p class="price">€29</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1535585209827-a39f6f3972a0?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Hair Mask</h3><p class="price">€24</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1631730486572-226b1e4a4b8b?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Lip Care Duo</h3><p class="price">€14</p></a>
+        <a class="pcard" href="../product/"><div class="img"><img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=700&q=80" alt="" /></div><h3>Travel Kit</h3><p class="price">€42</p></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="grid">
+        <div><div class="brand">i+m</div></div>
+        <div><h4>Shop</h4><a href="./">All</a><a href="../">Home</a></div>
+        <div><h4>Help</h4><a href="#">Shipping</a></div>
+        <div><h4>More</h4><a href="../product/">Product</a></div>
+      </div>
+      <div class="bar"><span>© 2026 i+m</span><span>Concept demo</span></div>
+    </div>
+  </footer>
+  <script src="../im.js"></script>
 </body>
 </html>
